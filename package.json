@@ -1,6 +1,6 @@
 {
   "name": "serverless-custom-cli",
-  "version": "1.1.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,6 +16,6 @@
     "serverless": "^1.42.2"
   },
   "bin": {
-    "serverless-custom": "./index.js"
+    "serverless-custom": " node ./index.js"
   }
 }

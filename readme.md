@@ -2,4 +2,4 @@
 
 ## Usage
 
-Just type **serverless-custom**serv and you will get rest of the options.
+Just type **serverless-custom** and you will get rest of the options.
