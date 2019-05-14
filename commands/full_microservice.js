@@ -5,12 +5,12 @@ const filePath = "./serverless-ms";
 const packageFile = require('../data/package');
 const lint = require('../data/eslint');
 
-const genMs = (data, callback) => {
+const genMs = (values, callback) => {
     nodeCmd.get("npm install -g serverless", (err, data, stdErr) => {
         if (err) {
             return callback(`Something went wrong ${err}`)
         } else {
-            nodeCmd.get(`${command} ${data.cloud}-${data.platform} --path ${filePath}`, (err, data, stdErr) => {
+            nodeCmd.get(`${command} ${values.cloud}-${values.platform} --path ${filePath}`, (err, data, stdErr) => {
                 if (err || stdErr) {
                     let error = err ? err : stdErr;
                     return callback(error, null)
