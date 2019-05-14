@@ -12,6 +12,7 @@
     "cli-spinner": "^0.2.10",
     "inquirer": "^6.3.1",
     "node-cmd": "^3.0.0",
+    "npm": "^6.9.0",
     "serverless": "^1.42.2"
   }
 }
